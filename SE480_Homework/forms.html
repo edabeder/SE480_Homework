@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="app.css" />
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+        color: #f8f9fb;
+      }
+    </style>
+  </head>
+  <body>
+    <body style="background-color: #56425a">
+        <nav>
+          <ul class="intro">
+            <li class="intro1">
+              <a href="index.html" style="color: white">Introduction</a>
+            </li>
+            <li class="intro1">
+              <a href="basics.html" style="color: white">Basics</a>
+            </li>
+            <li class="intro1">
+              <a href="attributes.html" style="color: white">Attributes</a>
+            </li>
+            <li class="intro1">
+              <a href="elements.html" style="color: white">Elements</a>
+            </li>
+            <li class="intro1">
+              <a href="tables.html" style="color: white">Tables</a>
+            </li>
+            <li class="intro1">
+              <a href="forms.html" style="color: white">Forms</a>
+            </li>
+            <li class="intro1">
+              <a href="classId.html" style="color: white">Class and ID</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1>HTML Forms</h1>
+        <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        </p>
+
+        <section class="formelement">
+            <h3>The <strong>&lt;form&gt;</strong> Element</h3>
+            <ul>
+                <li>
+                    The HTML <strong>&lt;form&gt;</strong> element is used to create an HTML form for user input
+                </li>
+                <li>
+                    The <strong>&lt;form&gt;</strong> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc. 
+                </li>
+            </ul>
+
+            <h3>Attributes for <strong>&lt;form&gt;</strong></h3>
+            <ul>
+                <li>
+                    The <b>action</b> attribute defines the action to be performed when the form is submitted. 
+                </li>
+                <li>
+                    The <b>target</b> attribute specifies where to display the response that is received after submitting the form. 
+                </li>
+                <li>
+                    The <b>method</b> attribute specifies the HTTP method to be used when submitting the form data.
+                    <ul>
+                        <li>
+                            The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+                        </li>
+                        <li>
+                            The default HTTP method when submitting form data is GET. 
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    The autocomplete attribute specifies whether a form should have autocomplete on or off. 
+                </li>
+            </ul>
+        </section>
+
+        <br>
+        <section>
+            <h3>The <strong>&lt;input&gt;</strong> Element</h3>
+            <ul>
+                <li>
+                    The HTML <strong>&lt;input&gt;</strong> element is the most used form element.
+                </li>
+                <li>
+                    An <strong>&lt;input&gt;</strong> element can be displayed in many ways, depending on the type attribute.
+                </li>
+            </ul>
+
+            <p>
+                Here are some examples:
+            </p>
+
+            <table id="formTable">
+                <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;input type="text"&gt;</td>
+                    <td>Displays a single-line text input field</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;input type="radio"&gt;
+                    </td>
+                    <td>Displays a radio button (for selecting one of many choices)
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                    <td>Displays a checkbox (for selecting zero or more of many choices)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>&lt;input type="submit"&gt;
+                    </td>
+                    <td>
+                        Displays a submit button (for submitting the form)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &lt;input type="button"&gt;
+                    </td>
+                    <td>Displays a clickable button
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <h2>Forms examples:</h2>
+        <section class="textfield">
+            <form action="forms.html">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="Name"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Surname"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+        </section> <br>
+
+        <section class="radio">
+            <p>Choose your favorite Web language:</p>
+            <form>
+                  <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">HTML</label><br>
+                  <input type="radio" id="css" name="fav_language" value="CSS">
+                  <label for="css">CSS</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                  <label for="javascript">JavaScript</label>
+                </form> 
+        </section> <br>
+
+        <section class="check">
+            <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+            <form action="forms.html">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> I have a bike</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> I have a car</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3"> I have a boat</label><br><br>
+              <input type="submit" value="Submit">
+            </form> 
+        </section>
+  </body>
+</html>

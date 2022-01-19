@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <link rel="stylesheet" href="app.css" />
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+        color: #f8f9fb;
+      }
+
+       #extable td, #extable th {
+          border: 1px solid black;
+        }
+        
+        #extable {
+          border-collapse: collapse;
+          width: 20%;
+        }
+    </style>
+  </head>
+  <body>
+    <body style="background-color: #56425a">
+        <nav>
+          <ul class="intro">
+            <li class="intro1">
+              <a href="index.html" style="color: white">Introduction</a>
+            </li>
+            <li class="intro1">
+              <a href="basics.html" style="color: white">Basics</a>
+            </li>
+            <li class="intro1">
+              <a href="attributes.html" style="color: white">Attributes</a>
+            </li>
+            <li class="intro1">
+              <a href="elements.html" style="color: white">Elements</a>
+            </li>
+            <li class="intro1">
+              <a href="tables.html" style="color: white">Tables</a>
+            </li>
+            <li class="intro1">
+              <a href="forms.html" style="color: white">Forms</a>
+            </li>
+            <li class="intro1">
+              <a href="classId.html" style="color: white">Class and ID</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1>Tables</h1>
+
+        <div class="tableDiv">
+            <img src="images/28.png" alt="tableimg" class="tableimg">
+            <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+            <ul>
+                <li>
+                    Table Cells
+                    <ul>
+                        <li>
+                            Each table cell is defined by a <strong>&lt;td&gt;</strong> and a <strong>&lt;/td&gt;</strong> tag.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Table Rows
+                    <ul>
+                        <li>
+                            Each table row starts with a <strong>&lt;tr&gt;</strong> and end with a <strong>&lt;/tr&gt;</strong> tag.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Table Columns
+                    <ul>
+                        <li>
+                            Sometimes you want your cells to be headers, in those cases use the <strong>&lt;th&gt;</strong> tag instead of the <strong>&lt;td&gt;</strong> tag:
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <section>
+            <p> HTML tables can have borders of different styles and shapes. For this you can use CSS:
+            </p>
+
+            <ul>
+                <li>
+                    Border:
+                </li>
+                <li>
+                    border-color:
+                </li>
+                <li>
+                    background-color:
+                </li>
+                <li>
+                    border-style:
+                </li>
+                <li>
+                    border-radius:
+                </li>
+                <li>
+                    border-collapse:
+                </li>
+            </ul>
+        </section> <br>
+
+
+        <h2>Table example</h2>
+        <table id="customers">
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Christina Berglund</td>
+            <td>Sweden</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Königlich Essen</td>
+            <td>Philip Cramer</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+          </tr>
+          <tr>
+            <td>North/South</td>
+            <td>Simon Crowther</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Paris spécialités</td>
+            <td>Marie Bertrand</td>
+            <td>France</td>
+          </tr>
+        </table> <br>
+
+        <section>
+            <h2>Colspan&Rowspan</h2>
+            <ul>
+                <li>
+                    to make a cell span over multiple columns, use the colspan attribute
+                </li>
+                <li>
+                    to make a cell span over multiple rows, use the rowspan attribute: 
+                </li>
+            </ul>
+            <p>Here is an example about rowspan and colspan:</p>
+            <table style="background-color: blanchedalmond;" id="extable">
+                <tr style="background-color: violet;">
+                    <td colspan="4" class=""> <span style="color: black">1</span></td>
+                </tr>
+        
+                <tr>
+                    <td rowspan="2" style="background-color: rgb(225, 228, 63);"><span style="color: black">2</span></td>
+                    <td><span style="color: black">3</span></td>
+                    <td colspan="2"><span style="color: black">4</span></td>
+                </tr>
+        
+                <tr>
+                    <td><span style="color: black">5</span></td>
+                    <td><span style="color: black">6</span></td>
+                    <td><span style="color: black">7</span></td>
+                </tr>
+            </table>
+        </section>
+        <br><br>
+    
+  </body>
+</html>

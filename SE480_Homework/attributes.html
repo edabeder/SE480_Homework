@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attributes</title>
+    <link rel="stylesheet" href="app.css" />
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+        color: #f8f9fb;
+        background-color: #56425a;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="intro">
+        <li class="intro1">
+          <a href="index.html" style="color: white">Introduction</a>
+        </li>
+        <li class="intro1">
+          <a href="basics.html" style="color: white">Basics</a>
+        </li>
+        <li class="intro1">
+          <a href="attributes.html" style="color: white">Attributes</a>
+        </li>
+        <li class="intro1">
+          <a href="elements.html" style="color: white">Elements</a>
+        </li>
+        <li class="intro1">
+          <a href="tables.html" style="color: white">Tables</a>
+        </li>
+        <li class="intro1">
+          <a href="forms.html" style="color: white">Forms</a>
+        </li>
+        <li class="intro1">
+          <a href="classId.html" style="color: white">Class and ID</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Attributes</h1>
+
+    <section class="htmlatt">
+      <p>HTML attributes provide additional information about HTML elements.</p>
+      <ul>
+        <li>All HTML elements can have attributes</li>
+        <li>Attributes provide additional information about elements</li>
+        <li>Attributes are always specified in the start tag</li>
+        <li>Attributes usually come in name/value pairs like: name="value"</li>
+      </ul>
+    </section>
+    <br />
+
+    <section class="hrefatt">
+      <h2>The href Attribute</h2>
+      <p>
+        The <span style="color: yellow"> <strong>&lt;a&gt;</strong></span> tag
+        defines a hyperlink. The href attribute specifies the URL of the page
+        the link goes to:
+      </p>
+      <img src="images/16.png" alt="href" style="width: 400px" /> <br />
+      <h2>The src Attribute</h2>
+      <p>
+        The <span style="color: yellow"> <strong>&lt;src&gt;</strong></span
+        > tag is used to embed an image in an HTML page. The src attribute
+        specifies the path to the image to be displayed:
+      </p>
+      <img src="images/17.png" alt="src" style="width: 480px" />
+      <p>There are two ways to specify the URL in the src attribute:</p>
+      <ol>
+        <li>
+          Absolute URL - Links to an external image that is hosted on another
+          website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+          <ul>
+            <li>
+              Notes: External images might be under copyright. If you do not get
+              permission to use it, you may be in violation of copyright laws.
+              In addition, you cannot control external images; it can suddenly
+              be removed or changed.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Relative URL - Links to an image that is hosted within the website.
+          Here, the URL does not include the domain name. If the URL begins
+          without a slash, it will be relative to the current page.
+          <ul>
+            <li>
+              Example: src="img_girl.jpg". If the URL begins with a slash, it
+              will be relative to the domain.
+            </li>
+            <li>Example: src="/images/img_girl.jpg".</li>
+          </ul>
+        </li>
+      </ol>
+      <p>
+        <b>Tip:</b> It is almost always best to use relative URLs. They will not
+        break if you change domain.
+      </p>
+    </section>
+    <br />
+
+    <section class="widthatt">
+      <h2>The width and height Attributes</h2>
+      <p>
+        The <span style="color: yellow"> <strong>&lt;img&gt;</strong></span> tag
+        should also contain the width and height attributes, which specifies the
+        width and height of the image (in pixels):
+      </p>
+    </section>
+    <br />
+
+    <section class="langatt">
+      <h2>The lang Attribute</h2>
+      <p>
+        You should always include the lang attribute inside the <span
+          style="color: yellow"
+        >
+          <strong>&lt;html&gt;</strong></span
+        > tag, to declare the language of the Web page. This is meant to assist
+        search engines and browsers.
+      </p>
+    </section>
+    <br />
+
+    <section class="styleatt">
+      <h2>The style Attribute</h2>
+      <p>
+        The style attribute is used to add styles to an element, such as color,
+        font, size, and more. (CSS)
+      </p>
+      <img src="images/18.png" alt="style" width="400px" />
+    </section>
+  </body>
+</html>

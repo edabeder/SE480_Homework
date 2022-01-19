@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+    <link rel="stylesheet" href="app.css" />
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+        color: #f8f9fb;
+      }
+    </style>
+  </head>
+  <body style="background-color: #56425a">
+    <nav>
+      <ul class="intro">
+        <li class="intro1">
+          <a href="index.html" style="color: white">Introduction</a>
+        </li>
+        <li class="intro1">
+          <a href="basics.html" style="color: white">Basics</a>
+        </li>
+        <li class="intro1">
+          <a href="attributes.html" style="color: white">Attributes</a>
+        </li>
+        <li class="intro1">
+          <a href="elements.html" style="color: white">Elements</a>
+        </li>
+        <li class="intro1">
+          <a href="tables.html" style="color: white">Tables</a>
+        </li>
+        <li class="intro1">
+          <a href="forms.html" style="color: white">Forms</a>
+        </li>
+        <li class="intro1">
+          <a href="classId.html" style="color: white">Class and ID</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>HTML Basics</h1>
+    <section class="doctype">
+      <h3>The <strong>&lt;!DOCTYPE&gt;</strong> Declaration</h3>
+      <ul>
+        <li>
+          The <strong>&lt;!DOCTYPE&gt;</strong> declaration represents the
+          document type, and helps browsers to display web pages correctly.
+        </li>
+        <li>
+          It must only appear once, at the top of the page (before any HTML
+          tags).
+        </li>
+        <li>
+          The <strong>&lt;!DOCTYPE&gt;</strong> declaration is not case
+          sensitive.
+        </li>
+        <li>The <strong>&lt;!DOCTYPE&gt;</strong> declaration for HTML5 is:</li>
+        <img src="images/4.png" alt="doctype" />
+      </ul>
+    </section>
+
+    <section class="comment">
+      <h3>HTML Comment Tag</h3>
+      <p>
+        You can add comments to your HTML source by using the following syntax:
+        <br />
+        <i>&lt;!-- Write your comments here --&gt;</i>
+      </p>
+    </section>
+    <br />
+
+    <section class="headingHTML">
+      <h3>HTML Headings</h3>
+      <p>
+        HTML headings are defined with
+        the <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> tags.
+        <strong>&lt;h1&gt;</strong> defines the most important
+        heading. <strong>&lt;h6&gt;</strong> defines the least important
+        heading:
+      </p>
+      <img src="images/5.png" alt="heading1" class="heading" />
+      <img src="images/6.png" alt="heading2" class="heading" />
+
+      <p>
+        Each HTML heading has a default size. However, you can specify the size
+        for any heading with the style attribute, using the CSS font-size
+        property:
+      </p>
+      <img src="images/7.png" alt="heading3" />
+    </section>
+    <br />
+
+    <section class="paragraphHTML">
+      <h3>HTML Paragraphs</h3>
+      <p>
+        HTML paragraphs are defined with the <strong>&lt;p&gt;</strong> tag:
+      </p>
+      <img src="images/8.png" alt="paragraph" />
+
+      <div>
+        <ul>
+          <li>You cannot be sure how HTML will be displayed.</li>
+          <li>
+            Large or small screens, and resized windows will create different
+            results.
+          </li>
+          <li>
+            With HTML, you cannot change the display by adding extra spaces or
+            extra lines in your HTML code.
+          </li>
+          <li>
+            The browser will automatically remove any extra spaces and lines
+            when the page is displayed:
+          </li>
+        </ul>
+        <img src="images/9.png" alt="paragraph" class="paragraph" />
+      </div>
+    </section>
+    <br />
+
+    <section>
+      <h3><strong>&lt;pre&gt;</strong> Element</h3>
+      <p>
+        The HTML <strong>&lt;pre&gt;</strong> element defines preformatted text.
+        <br />
+        The text inside a <strong>&lt;pre&gt;</strong> element is displayed in a
+        fixed-width font (usually Courier), and it preserves both spaces and
+        line breaks:
+      </p>
+      <img src="images/10.png" alt="pre" class="preElement" />
+    </section>
+    <br />
+
+    <section>
+      <h3>Line Breaks</h3>
+      <p>
+        The HTML <strong>&lt;br&gt;</strong> element defines a line break. Use
+        <strong>&lt;br&gt;</strong> if you want a line break (a new line)
+        without starting a new paragraph:
+      </p>
+      <img src="images/11.png" alt="break" class="break" />
+    </section>
+    <br />
+
+    <section>
+      <h3>Horizontal Rules</h3>
+      <ul>
+        <li>
+          The <strong>&lt;hr&gt;</strong> tag defines a thematic break in an
+          HTML page, and is most often displayed as a horizontal rule.
+        </li>
+        <li>
+          The <strong>&lt;hr&gt;</strong> element is used to separate content
+          (or define a change) in an HTML page:
+        </li>
+      </ul>
+      <img src="images/12.png" alt="horizontal" class="hrElement" />
+    </section>
+    <br />
+
+    <section class="linksBasic">
+      <h3>HTML Links</h3>
+      <p>HTML links are defined with the <strong>&lt;hr&gt;</strong> tag:</p>
+      <img src="images/13.png" alt="links" class="links" />
+    </section>
+    <br />
+
+    <section class="imagesBasic">
+      <h3>HTML Images</h3>
+      <ul>
+        <li>
+          HTML images are defined with the <strong>&lt;img&gt;</strong> tag.
+        </li>
+        <li>
+          The source file (src), alternative text (alt), width, and height are
+          provided as attributes:
+        </li>
+      </ul>
+      <img src="images/14.png" alt="image" class="image" />
+    </section>
+    <br />
+
+    <section>
+      <h3>Nested HTML Elements</h3>
+      <p>
+        HTML elements can be nested (this means that elements can contain other
+        elements). <br />
+        All HTML documents consist of nested HTML elements. <br />
+        The following example contains four HTML elements
+        (<strong>&lt;html&gt;</strong>, <strong>&lt;body&gt;</strong>,
+        <strong>&lt;h1&gt;</strong> and <strong>&lt;p&gt;</strong>):
+      </p>
+
+      <div class="nestedDiv">
+        <img src="images/15.png" alt="nested" class="nested" />
+        <ul>
+          <li>
+            The <strong>&lt;html&gt;</strong> element is the root element and it
+            defines the whole HTML document.
+            <ul>
+              <li>
+                It has a start tag <strong>&lt;html&gt;</strong> and an end
+                tag <strong>&lt;/html&gt;</strong>.
+              </li>
+              <li>
+                Then, inside the <strong>&lt;html&gt;</strong> element there is
+                a <strong>&lt;body&gt;</strong> element:
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            The <strong>&lt;body&gt;</strong> element defines the document's
+            body.
+            <ul>
+              <li>
+                It has a start tag <strong>&lt;body&gt;</strong> and an end tag
+                <strong>&lt;/body&gt;</strong>.
+              </li>
+              <li>
+                Then, inside the <strong>&lt;body&gt;</strong> element there are
+                two other elements: 
+                <strong>&lt;h1&gt;</strong> and <strong>&lt;p&gt;</strong>:
+              </li>
+            </ul>
+          </li>
+          <li>The <strong>&lt;h1&gt;</strong> element defines a heading.</li>
+          <li>The <strong>&lt;p&gt;</strong> element defines a paragraph.</li>
+        </ul>
+      </div>
+    </section>
+    <br />
+    <br />
+
+    <section class="listBasic">
+      <h3>HTML Lists</h3>
+      <p>
+        HTML lists allow web developers to group a set of related items in
+        lists.
+      </p>
+      <ul>
+        <li>
+          Unordered HTML List
+          <ul>
+            <li>
+              An unordered list starts with the <strong>&lt;ul&gt;</strong> tag.
+              Each list item starts with the <strong>&lt;li&gt;</strong> tag.
+            </li>
+            <li>Type: Disc, circle, square</li>
+          </ul>
+        </li>
+        <li>
+          Ordered HTML List
+          <ul>
+            <li>
+              An ordered list starts with the <strong>&lt;ol&gt;</strong> tag.
+              Each list item starts with the <strong>&lt;li&gt;</strong> tag.
+            </li>
+            <li>Type: 1,A,a,I,i</li>
+            <li>start</li>
+          </ul>
+        </li>
+        <li>
+          HTML Description Lists
+          <ul>
+            <li>
+              The dl tag defines the description list, the dt tag defines the
+              term (name), and the dd tag describes each term.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <br />
+  </body>
+</html>

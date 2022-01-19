@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css">
+    <title>Introduction</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", sans-serif;
+        color: #f8f9fb;
+        background-color: #56425a;
+      }
+    </style>
+  </head>
+
+  <body>
+  <nav>
+    <ul class="intro">
+      <li class="intro1">
+        <a href="index.html" style="color: white">Introduction</a>
+      </li>
+      <li class="intro1">
+        <a href="basics.html" style="color: white">Basics</a>
+      </li>
+      <li class="intro1">
+        <a href="attributes.html" style="color: white">Attributes</a>
+      </li>
+      <li class="intro1">
+        <a href="elements.html" style="color: white">Elements</a>
+      </li>
+      <li class="intro1">
+        <a href="tables.html" style="color: white">Tables</a>
+      </li>
+      <li class="intro1">
+        <a href="forms.html" style="color: white">Forms</a>
+      </li>
+      <li class="intro1">
+        <a href="classId.html" style="color: white">Class and ID</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>HTML Introduction</h1> 
+
+    <nav class="whatHTML">
+      <h2> <span style=color:#dee2ff>What is HTML?</span> </h2>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>
+          HTML elements label pieces of content such as "this is a heading",
+          "this is a paragraph", "this is a link", etc.
+        </li>
+      </ul>
+    </nav>
+
+    <br>
+     <section class="simpleHTML">
+      <h2> <span style=color:#dee2ff>A Simple HTML Document</span> </h2>
+      <ul>
+        <li> <span style="color: #fff67c"> <strong>&lt;!DOCTYPE html&gt;</strong></span> declaration defines that this document is an HTML5 document
+        </li>
+        <li>The <span style="color: #fff67c"> <strong>&lt;html&gt;</strong></span> element is the root element of an HTML page
+        </li>
+        <li>The <span style="color: #fff67c"> <strong>&lt;head&gt;</strong></span> element contains meta information about the HTML page
+        </li>
+        <li>The <span style="color: #fff67c"> <strong>&lt;title&gt;</strong></span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+        </li>
+        <li>The <span style="color: #fff67c"> <strong>&lt;body&gt;</strong></span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+        </li>
+        <li> The <span style="color: #fff67c"> <strong>&lt;h1&gt;</strong></span> element defines a large heading
+        </li>
+        <li> <span style="color: #fff67c"> <strong>&lt;p&gt;</strong></span> element defines a paragraph</li>
+      </ul>
+
+      <img src="images/1.png" alt="simple html document" id=simpleHtml>
+     </section>
+
+      <br> <br>
+
+
+      <section>
+        <h2><span style=color:#dee2ff> What is an HTML Element?</span> </h2>
+        <div class="whatElement">
+          An HTML element is defined by a start tag, some content, and an end tag: <br>
+          <strong>&lt;tagname&gt;</strong>Content goes here...<strong>&lt;/tagname&gt;</strong>
+        </div>
+        <table id="elementTable">
+          <tr>
+            <th>Start Tag</th>
+            <th>Element Content</th>
+            <th>End Tag</th>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>&lt;h1&gt;</strong>
+            </td>
+            <td>My First Heading</td>
+            <td><strong>&lt;/h1&gt;</strong></td>
+          </tr>
+
+          <tr>
+            <td><strong>&lt;p&gt;</strong></td>
+            <td>My first paragraph</td>
+            <td><strong>&lt;/p&gt;</strong></td>
+          </tr>
+
+          <tr>
+            <td><strong>&lt;br&gt;</strong></td>
+            <td>none</td>
+            <td>none</td>
+          </tr>
+        </table>
+      </section>
+   
+        <br>
+
+      <section>
+        <p>
+          <h2>HTML Page Structure</h2>
+          <div class="pageStrDiv">The content inside the <strong>&lt;body&gt;</strong> section (the white area above) will be displayed in a browser. The content inside the <strong>&lt;title&gt;</strong> element will be shown in the browser's title bar or in the page's tab.</div>
+          <img src="images/2.png" alt="html page structure" id="pagestr">
+        </p>
+
+      </section>  
+   
+      <br>
+
+      <section>
+        <h2>Web Browsers</h2>
+      <ul>
+        <li>
+          The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+        </li>
+        <li>A browser does not display the HTML tags, but uses them to determine how to display the document:
+        </li>
+      </ul>
+      <img src="images/3.png" alt="web" class="web">
+      </section>
+
+      <br>
+
+      <section>
+        <div class="listsDiv">
+          <h2>How To View HTML Source?</h2>
+        <div class="listsIndex">
+          <ul>
+            <li>View HTML Source Code: 
+              <ul>
+                <li>
+                  Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.
+                </li>
+              </ul>
+            </li>
+    
+            <li>
+              Inspect an HTML Element:
+              <ul>
+                <li>
+                  Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+        
+      </section>
+
+      <br>
+      <section>
+        <div class="editorDiv">
+          <h2>HTML Editors</h2>
+        <p>An HTML editor is a piece of software for creating and editing HTML code. It can be a stand-alone software dedicated to code writing and editing or a part of an IDE (Integrated Development Environment). 
+        </p>
+        <p>
+          An HTML editor provides more advanced features and is specifically designed for developers to create web pages more efficiently. It ensures every string of code is clean and works properly. 
+        </p>
+
+        <h3>When Do you need an HTML Editor?</h3>
+        An HTML Editor is helpful when:
+        <ul>
+          <li>You’re learning to code HTML.
+          </li>
+          <li>You need to edit an HTML or CSS file.
+          </li>
+          <li>It’s essential to efficiently write HTML or other design-based code like CSS.
+          </li>
+          <li>You need a professional tool that helps you reduce errors in your code.
+          </li>
+          <li>A basic word processor or text editor just isn’t cutting it for you anymore.
+          </li>
+        </ul>
+
+        <h3>Editors:</h3>
+        <ul>
+          <li>Atom</li>
+          <li>Notepad++</li>
+          <li>Sublime Text</li>
+          <li>Visual Studio Code</li>
+          <li>Adobe Dreamweaver CC
+          </li>
+          <li>Froala</li>
+          <li>CoffeeCup</li>
+          <li>Brackets.io
+          </li>
+          <li>Vim</li>
+          <li>Komodo Edit</li>
+        </ul>
+        </div>
+      </section>
+
+  </body>
+</html>
